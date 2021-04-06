@@ -1,0 +1,453 @@
+/* Index specifications */
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+  
+    margin: 0;
+}
+
+/* Header */
+
+.header{ 
+    margin: 0px center;
+    position: relative;
+    padding: 0px 0px;
+    padding-bottom: 10px;
+    height: 90px;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: 400%;
+    background-image: url('img/sonja-punz-background\ \(blue-edition\).png');
+    /* Filepath!! */
+}
+
+
+nav{
+padding-top: 13px;
+margin: 0px ;
+text-align: center;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.nav-ul{
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0;
+list-style-type: none;
+}
+
+.nav-li{
+    display: inline-block;
+}
+
+.nav-a{
+    color: white;
+    font-size: 31px;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    padding: 10px 10px;
+    padding-bottom: 9px;
+    margin: 0px 0px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.nav-a:hover{
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    transition-duration: 0.5s;
+    /* text-decoration-line: overline; */
+    box-shadow: black 13px 26px 12px;
+}
+
+.hamburger{
+  background-color: transparent;
+  border: 0;
+  color:white;
+  cursor: pointer;
+  font-size: 20px;
+  display: none;
+}
+
+.hamburger:focus{
+outline: none;
+}
+
+/* ************************************** */
+/* Home Specifications */
+
+.main{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-left: -15px;
+    padding-right: 15px;
+    visibility: visible;
+}
+
+/* BoxContainer */
+
+.home-boxcontainer{
+    width: 60%;
+    margin: auto;
+    height: auto;
+    margin-top: 60px;
+    position: relative;
+    /* add flexboxstyle */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-basis: 33.333333%;
+}
+
+.home-box{
+    width: 320px;
+    height: 320px;
+    margin: 20px 0px;
+    margin-bottom: 90px;
+    background-color: #6F7453; 
+    box-shadow: -5px 10px 11px rgba(0,0,0,0.43);
+}
+
+.home-box p{
+position: absolute;
+text-align: center;
+padding: 20px;
+justify-content: center;
+transform: rotate(-15deg);
+line-height: 220px;
+color: rgb(0, 0, 0);
+font-size: 28px;
+font-weight: normal;
+text-decoration: none;
+font-family: 'Permanent Marker', cursive;
+
+visibility: hidden;
+}
+
+.home-box img{
+    width: 320px;
+    height: 320px;
+    opacity: 1;
+}
+
+.home-box:hover{
+    box-shadow: -5px 30px 31px rgba(0,0,0,0.43);
+    transition: 0.4s;
+    opacity: 0.6;
+}
+
+
+
+
+/* Home Responsive Settings */
+@media screen and (max-width: 1680px){
+    .home-boxcontainer{
+        width: 75%;
+    }
+    .home-box{
+        
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 1432px){
+    .home-boxcontainer{
+        width: 80%;
+        margin-top: 50px;
+    }
+
+    .home-box{
+        
+        margin-bottom: 60px;
+    }
+}
+
+
+
+@media screen and  (max-width: 850px){
+    .home-boxcontainer{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .home-box{
+        
+        margin-bottom: 60px;
+    }
+}
+
+
+/* *********************************** */
+/* Photo Specifications */
+
+#ng-view{
+    background-color: white;
+    visibility: visible;
+}
+
+.photo-flexbox-container{
+    display: flex;
+    flex-direction:row;
+    width: 70%;
+    margin-top: 160px;
+    margin-left: 150px;
+    justify-content: center;
+    align-content: center;
+    }
+    
+    .photo-flexbox-container > * {
+        margin: 0 15px;
+      }
+    
+    .photo-box1{
+    height: 350px;
+    margin-top: 10px;
+    }
+    
+    .photo-box1 img{
+    width: 350px;
+    height: 350px;
+    }
+    
+    .photo-box2{
+    
+    width: 50%;
+    margin-left: 25px;
+    
+    }
+    
+    .photo-box2 h2{
+        font-family: 'Permanent Marker', cursive;
+        font-weight: bolder;
+        font-size: 55px;
+        color: black;
+        
+        margin-top: 0;
+        margin-bottom: 35px;
+    }
+    
+    .photo-box2 p{
+        font-family: 'DM Sans', sans-serif;
+        font-size: 23px;
+        font-weight: 500;
+        color: black;
+        margin-top: 0;
+        margin-bottom: 100px;
+    }
+    
+    .photo-box2 a{
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        color: white;
+        background-color: #6F7453;
+        border-radius: 37px;
+        text-decoration: none;
+        transition: 0.3s;
+        
+        padding: 17px 39px;
+       
+    }
+    
+    .photo-box2 a:hover{
+        background-color: #3c3f29;
+    }
+
+    /* Description Responsive Settings */
+
+    @media screen and (max-width: 1550px){
+
+        .photo-flexbox-container{
+            width: 80%;
+            margin-left: 120px;
+    }
+}
+
+    @media screen and (max-width: 1380px){
+
+        .photo-flexbox-container{
+            width: 80%;
+            margin-left: 100px;
+    }
+
+}
+
+    @media screen and (max-width: 1260px){
+
+        .photo-flexbox-container{
+            width: 95%;
+            margin-left: 20px;
+    }
+}
+
+    @media screen and (max-width: 1100px){
+        
+        .photo-flexbox-container{
+            flex-direction:column;
+            width: 95%;
+            margin-top: 60px;
+            margin-bottom: 100px;
+    }
+
+    .photo-box2{
+    
+        width: 70%;
+    }
+
+    .photo-box2 h2{
+        margin-top: 30px;
+        margin-bottom: 35px;
+    }
+
+    .photo-box2 p{
+    margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 768px){
+        
+    .photo-flexbox-container{
+        flex-direction:column;
+        width: 95%;
+        margin-top: 60px;
+        margin-bottom: 100px;
+}
+
+.photo-box2{
+
+    width: 90%;
+}
+
+.photo-box2 h2{
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+.photo-box2 p{
+margin-bottom: 50px;
+}
+}
+
+
+/* Responsive Settings */
+@media screen and (max-width: 650px) {
+
+    .body.show{
+      background-repeat: no-repeat;
+      background-size: 400%;
+      background-image: url('img/sonja-punz-background\ \(blue-edition\).png');
+    
+      background-blend-mode: color-dodge;
+      background-color: rgba(13, 20, 15, 0.795);
+      height: 930px;
+    }
+
+
+    .header.show{
+        background-blend-mode: color-dodge;
+        background-color: rgba(13, 20, 15, 0.795);      
+    }
+    
+    .main.show{
+    visibility: hidden;
+    }
+
+    #ng-view.show{
+    visibility: hidden;
+    background-color: none;
+}  
+
+    .nav-ul{
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    }
+    
+    .nav-ul.show{
+    display: flex;
+    /* Position */
+    padding-bottom: 200px ;
+    padding-top: 50px;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    }
+    
+    .nav-li{
+      margin: 4px;
+    }
+    
+    .nav-a.show{ 
+        font-size: 35px;
+        padding: 10px 20px;
+        margin: 13px 0;
+        text-align: center;
+        opacity: 0.6;
+    }
+    
+    .nav-a:hover{
+        opacity: 1;
+        border-bottom: none;
+        box-shadow: none;
+    }
+    
+    #mobileicon{
+        opacity: 0.7;
+        transition: .3s all; 
+    
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    
+    #mobileicon:hover{
+    opacity: 1;
+    transition-duration: 0.5s;
+    }
+    
+    #mobileicon.show{
+        transition: .3s all; 
+    
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        transform: rotate(135deg);
+    
+    }
+    
+    .hamburger{
+      display: block;
+      }    
+    }
+
+    /* Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(255, 255, 255); 
+    border-radius: 100px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(179, 176, 176, 0.87); 
+    border-radius: 10px;
+  }

@@ -1,0 +1,14 @@
+<div class="main">
+
+<div class="home-boxcontainer">
+
+    <div class="home-box" ng-repeat="photo in photos">
+    <p> {{photo.project}} </p>
+    <a class="projectbutton" href="#/photos/{{$index}}"><img ng-src="{{ photo.url }}"></a>
+</div>
+
+</div>
+
+</div>
+
+<script src="/js/project.js"></script>
