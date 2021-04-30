@@ -107,7 +107,15 @@ outline: none;
     justify-content: space-around;
     flex-wrap: wrap;
     flex-basis: 33.333333%;
+    -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+    animation: fadein 1.5s;    
 }
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+    }
+
 
 .home-box{
     width: 320px;
