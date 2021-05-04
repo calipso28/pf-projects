@@ -1,10 +1,19 @@
 <div class="main">
 
+<div class="side-font"> Projects <br> Projects <br> Projects <br> Projects  </div>
+
 <div class="home-boxcontainer">
 
     <div class="home-box" ng-repeat="photo in photos">
-    <p> {{photo.project}} </p>
-    <a class="projectbutton" href="#/photos/{{$index}}"><img ng-src="{{ photo.url }}"></a>
+   
+    <a class="projectbutton" href="#/photos/{{$index}}">
+        
+    <div class="box-blend-background">    
+        <p class="project-name"> {{photo.project}} <br> <strong class="see-more">Click for Details</strong> </p>
+    </div>
+
+        <img class="home-box-img" ng-src="{{ photo.url }}">  
+    </a>
 </div>
 
 </div>
