@@ -96,9 +96,7 @@ outline: none;
     background-color: white;
   
     visibility: visible;
-    margin: 0;
-    -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
-    animation: fadein 1.5s;   
+    margin: 0; 
 }
 
 /* Projektschriftzug */
@@ -267,13 +265,13 @@ font-family: 'DM Sans', sans-serif;
     flex-direction:row;
     width: 70%;
     margin-top: 160px;
-    margin-left: 150px;
+    margin-left: 0px;
     justify-content: center;
     align-content: center;
     }
     
     .photo-flexbox-container > * {
-        margin: 0 15px;
+        margin: 0px -5px;
       }
     
     .photo-box1{
@@ -287,10 +285,7 @@ font-family: 'DM Sans', sans-serif;
     }
     
     .photo-box2{
-    
     width: 50%;
-    margin-left: 25px;
-    
     }
     
     .photo-box2 h2{
@@ -418,7 +413,6 @@ margin-bottom: 50px;
     
       background-blend-mode: color-dodge;
       background-color: rgba(13, 20, 15, 0.795);
-      height: 800px;
     }
 
     .header{
@@ -454,8 +448,7 @@ margin-bottom: 50px;
     .nav-ul.show{
     display: flex;
     /* Position */
-    padding-bottom: 200px ;
-    padding-top: 50px;
+    padding-top: 20px;
     justify-content: space-between;
     text-align: center;
     width: 100%;
