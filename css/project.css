@@ -102,8 +102,7 @@ outline: none;
 /* Projektschriftzug */
 .side-font{
     position: fixed;
-    color: rgb(126, 120, 65);
-    opacity: 0.2;
+    color: rgba(82, 82, 42, 0.075);
     font-size: 160px;
     font-weight: 800;
     text-decoration: none;
@@ -265,13 +264,13 @@ font-family: 'DM Sans', sans-serif;
     flex-direction:row;
     width: 70%;
     margin-top: 160px;
-    margin-left: 0px;
+    margin-left: 150px;
     justify-content: center;
     align-content: center;
     }
     
     .photo-flexbox-container > * {
-        margin: 0px -5px;
+        margin: 0px 20px;
       }
     
     .photo-box1{
@@ -376,18 +375,30 @@ font-family: 'DM Sans', sans-serif;
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 350px) and (max-width: 650px){
+
         
     .photo-flexbox-container{
         flex-direction:column;
-        width: 95%;
-        margin-top: 60px;
+        width: 90%;
+        margin-top: 80px;
         margin-bottom: 100px;
-}
+    }
+
+.photo-flexbox-container > * {
+    margin: 0px 0px;
+  }
+
+  .photo-box1 img{
+    width: 320px;
+    height: 320px;
+    }
+
 
 .photo-box2{
 
     width: 90%;
+    height: auto;
 }
 
 .photo-box2 h2{
@@ -402,7 +413,7 @@ margin-bottom: 50px;
 
 
 /* Responsive Settings */
-@media screen and (min-width: 350px) and (max-width: 802px) {
+@media screen and (min-width: 350px) and (max-width: 650px) {
     
     /* Mobile Menu Settings */
     
@@ -413,6 +424,7 @@ margin-bottom: 50px;
     
       background-blend-mode: color-dodge;
       background-color: rgba(13, 20, 15, 0.795);
+      width: 100%;
     }
 
     .header{
@@ -430,6 +442,7 @@ margin-bottom: 50px;
         background-color: rgba(13, 20, 15, 0.795);     
     }
     
+
     .main.show{
     visibility: hidden;
     }
